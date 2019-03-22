@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import '~materialize-css/dist/css/materialize.min.css';
+
+
+body{
+    background-image:url('../../img5.jpg');
+    background-size: 1600px 1000px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.div{
+  text-decoration-color: aliceblue
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  /* Button style */
+  button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+  }
+
+  .hide{
+    display:none;
+  }
+  
+  /* mat-table */
+  mat-footer-row mat-footer-cell{
+    justify-content: center;
+    font-style: italic;
+  }
+
+  
