@@ -20,6 +20,7 @@
     <div class="form-group" [ngClass]="{'has-error': password.touched && password.invalid }">
       <label for="password" class="control-label">Password </label>
       <input type="text" id="password" class="form-control" name="password" [(ngModel)]="model.password" required #password="ngModel">
+<!-- type can be password for hiding the characters -->
       <!-- Validation -->
       <span *ngIf="password.touched && password.invalid" class="help-block"> Password can't be blank. </span>
     </div>
