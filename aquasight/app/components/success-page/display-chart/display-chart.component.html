@@ -1,0 +1,13 @@
+
+<div style="background-color: mintcream ">
+    
+            <button class="btn btn-danger" (click)="onClose()" ><span class="glyphicon glyphicon-remove"></span></button>
+            <button class="btn btn-success"  [routerLink]="['/chart']" (click)="onClose()" ><span class="glyphicon glyphicon-resize-full"></span></button>
+        <div *ngIf="chart">
+            <canvas id="canvas">{{chart}}</canvas>
+            <!-- Interpolation -->
+            </div>
+   
+</div>
+
+

@@ -1,0 +1,37 @@
+
+<form #simpleForm="ngForm" >
+  <div class="form-group text-right">
+
+      <button mat-raised-button type="button" class="btn btn-link btn-success ripple"  (click)="openChart()"> <span class="glyphicon glyphicon-export"></span>
+       &nbsp; <b>Show chart </b></button> &nbsp; &nbsp;
+       
+      <button type="button" [routerLink]="['/login']" class="btn btn-link ripple">
+        <span class="glyphicon glyphicon-log-out"></span> &nbsp;
+        <b> Logout </b> </button>
+  </div>
+    <div class="form-group" >
+  
+      <label for="flow" class="control-label" > Flow* </label>
+      <input type="number" id="flow" class="form-control" placeholder="1.00" name="flow" [(ngModel)]="flow" required >
+      <span class="help-block">Flow should be a number greater than 0</span>
+      <span  class="help-block" > Flow can't be blank </span>
+      
+    </div>
+    <div class="form-group" >
+ 
+        <label for="pressure" class="control-label" > Pressure* </label>
+        <input type="number" id="pressure" class="form-control" placeholder="1.00" name="pressure" [(ngModel)]="pressure" required >
+        <span class="help-block">Pressure should be a number greater than 0</span>
+        <span  class="help-block" > Pressure can't be blank </span>
+      
+      </div>
+      <div class="form-group" >
+  
+          <button [disabled]="simpleForm.invalid"   class="btn btn-success center-block ripple text-center " type="submit" (click)=addData()>
+              <span class="glyphicon glyphicon-save"></span> &nbsp; Submit </button>
+           
+          
+        </div>
+
+  </form>
+  
