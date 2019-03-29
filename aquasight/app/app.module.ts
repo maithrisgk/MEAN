@@ -27,7 +27,7 @@ const routes:Routes=[
   {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'login',component:LoginFormComponent},
   {path:'form',component:SuccessPageComponent,canActivate:[AuthGuard]},
-  {path:'chart',component:ChartExpandComponent},
+  {path:'chart',component:ChartExpandComponent,canActivate:[AuthGuard]},
   {path:'**',component:PageNotFoundComponent}
   
 ];
