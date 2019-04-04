@@ -1,0 +1,13 @@
+display-chart.component.html
+
+<!-- [routerLink] = "[/chart']" -->
+
+<button class="btn btn-success"   (click)="onExpand()" ><span class="glyphicon glyphicon-resize-full"></span></button>
+
+<canvas id="canvas" width="600" height="500" > {{chart}} </canvas>
+
+display-chart.component.ts
+
+onExpand(){
+this.dialogRef.updateSize('100%','100%');
+}
