@@ -1,4 +1,4 @@
-# Aquasight
+
 Full Stack Development --
 HTML5, CSS3, Bootstrap, Angular, Express.js, Node.js, MongoDB (MEAN stack)
 
